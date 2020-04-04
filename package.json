@@ -2,7 +2,7 @@
   "name": "gatsby-starter-leaflet",
   "description": "A Gatsby starter with Leafet!",
   "version": "0.2.2",
-  "author": "Colby Fayock <hello@colbyfayock.com>",
+  "author": "",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "axios": "^0.19.2",
@@ -53,7 +53,8 @@
     "lint": "eslint -c ./config/eslint.config.js . --ext .js",
     "start": "yarn develop",
     "serve": "gatsby serve",
-    "test": "jest --config ./config/jest.config.js"
+    "test": "jest --config ./config/jest.config.js",
+    "heroku-postbuild": "gatsby build"
   },
   "husky": {
     "hooks": {
@@ -65,12 +66,5 @@
       "yarn format",
       "yarn lint"
     ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/colbyfayock/gatsby-starter-leaflet"
-  },
-  "bugs": {
-    "url": "https://github.com/colbyfayock/gatsby-starter-leaflet/issues"
   }
 }
